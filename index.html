@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>User Repo App</title>
+        <meta name='description' content='Github user repo search app'>
+        <meta name='viewport' content='width=device-width'>
+        <link href='main.css' rel='stylesheet'/>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Search for GitHub User Repositories</h1>
+        </header>
+        <main>
+            <section class='search-form'>
+                <form>
+                    <legend>Enter a GitHub Username</legend>
+                    <label for='name'>
+                        <input class='username auto' type='text' name='username' value='gh-user' required>
+                    </label>
+                    <label for='submit'>
+                        <input class='submit' type='submit' value='Submit'>
+                    </label>
+                </form>
+            </section>
+            <section class='results-list hide'>
+
+            </section>
+        </main>
+    </body>
+</html>
